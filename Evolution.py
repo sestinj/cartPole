@@ -88,7 +88,6 @@ class NN:
         if probType == "classification":
             #Add in the ability to use Support Vector Machines, because they can take the same input, but give drastically more accurate output for certain problems
             if self.isSVM:
-                print("                                                   SSSSSSSSSSSVVVVVVVVVVVVVVVVVVVMMMMMMMMMMMM")
                 clf = SVC(gamma=0.001,max_iter=10)
             else:
                 clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
